@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/* apply styles to <body> */
+body {
+  background-color:ghostwhite;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* <body> styles end */
+
+h2{
+  font-size:60px;
+  padding: 15px;
+  color:#39a6b2;
+  height:100%;
+}
+
+/* apply styles to <header> */
+header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background-color: #073035;
+  z-index: 9999;
+  } 
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #39a6b2;
+  margin: 0;
+  }
+    
+header a {
+  text-decoration: none;
+  color: #39a6b2;
+  }
+  
+header nav {
+  margin: 7px 0;
+  }
+  
+  
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  }
+  
+header nav ul li a {
+  padding:15px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  }
+
+header img {
+  width:50px;
+  height:50px;
+  float:left;
+}
+  
+/* <header> styles end */
+
+/* apply styles to <hero> */
+.hero {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* <hero> styles end */
+
+/* this is section title*/
+.tab {
+  margin-top:0;
+  margin-left:0;
+  float: left;
+  text-align: center;
+  height: 50%;
+  width:50%;
+}
+
+/* apply styles to aboutme */
+.intro {
+  flex: 2 100%;
+  text-align: center;
+  justify-content: center;
+  display:flex;
+  flex-wrap: wrap;
+  margin:0 5% 0 5%;
+}
+
+.intro article {
+  font-size:20px; 
+  color:#39a6b2;
+  margin: 0px 20px 70px 20px;
+  width: 1400px;
+  float:right;
+}
+/* section intro styles end */
+
+/* apply styles to work*/
+.experience {
+  justify-content: center;
+  margin: 0 0 0 0;
+  text-align: center;
+  flex-wrap: wrap;
+  display:flex;
+}
+
+/* to make first project more obvious*/
+.firstwork {
+  border: 5px solid #39a6b2;
+  height: 800px;
+  width: 1600px;
+  background-image: url("../images/run-buddy.png");
+  float:left;
+  margin:0px 10px 10px 10px;
+}
+.firstwork:hover {
+  color: #fce138;
+  opacity: .5;
+}
+
+/* to make the rest projects smaller*/
+.restwork {
+  border: 5px solid #39a6b2;
+  height: 400px;
+  width: 790px;
+  background-color:white;
+  float:left;
+  background-image: url("../images/comingsoon.jpg");
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  margin:0px 10px 10px 10px;
+  }
+
+.restwork:hover {
+  color: #fce138;
+  opacity: .5;
+}
+
+.firstwork article {
+  margin-top: 30%;
+  background-color: #39a6b2;
+  width: fit-content;
+  padding:1%;
+}
+
+.restwork article {
+  margin-top: 30%;
+  background-color: #39a6b2;
+  width: fit-content;
+  padding:1%;
+}
+
+.experience h3 {
+  font-size: large;
+  text-align: center;
+}
+
+.experience p {
+  font-size: medium;
+  text-align: center;
+}
+
+/*apply styles to contact me*/
+.contact {
+  justify-content: center;
+  margin: 0 0 0 0;
+  text-align: center;
+  flex-wrap: wrap;
+  display:flex;
+}
+  
+.contact nav {
+  margin:0px 10px 10px 10px;
+  font-size:20px; 
+  color:#39a6b2;
+  width: 1400px;
+  float:right;
+  }
+  
+  
+.contact nav ul li {
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  display:inline;
+  margin: 80px;
+  }
+
+.contact nav ul li a {
+  color: #39a6b2;
+  text-decoration: none;
+}
+/*contactme styles end*/
+
+/*apply styles to footer*/
+footer {
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+  
+footer h2 {
+  color: #39a6b2;
+  font-size: 30px;
+  }
+/*footer styles end*/
+
+/*apply styles to different resolution device*/
+@media screen and (max-width:1600px) { 
+  .firstwork {
+    height: 600px;
+    width: 1200px;
+    margin:0px 10px 10px 10px;
+  }
+  
+  .restwork {
+    height: 300px;
+    width: 590px;
+    margin:0px 10px 10px 10px;
+  } 
+
+  .experience h3 {
+    font-size: large;
+  }
+    
+  .experience p {
+    font-size: medium;
+  }
+  
+  .contact nav {
+    margin:0px 10px 10px 10px;
+    width: 800px;
+  }
+  
+  .contact nav ul li {
+    margin: 20px;
+  }    
+
+}
+
+@media screen and (max-width:980px) {
+  .firstwork {
+    height: 400px;
+    width: 800px;
+    margin:0px 10px 10px 10px;
+   }
+
+  .restwork {
+    height: 200px;
+    width: 390px;
+    margin:0px 10px 10px 10px;
+  } 
+  
+  .experience h3 {
+    font-size: medium;
+  }
+  
+  .experience p {
+    font-size: small;
+  }
+
+  .contact nav {
+    margin:0px 10px 10px 10px;
+    width: 800px;
+    }
+
+  .contact nav ul li {
+    margin: 20px;
+    }    
+}
+
+@media screen and (max-width:768px) {
+  .firstwork {
+    height: 300px;
+    width: 600px;
+    margin:0px 10px 10px 10px;
+   }
+
+  .restwork {
+    height: 150px;
+    width: 290px;
+    margin:0px 10px 10px 10px;
+  } 
+  
+  .experience h3 {
+    font-size: small;
+  }
+
+  .experience p {
+    font-size: smaller;
+  }
+
+  .contact nav {
+    margin:0px 10px 10px 10px;
+    width: 800px;
+    }
+
+  .contact nav ul li {
+    margin: 20px;
+    }    
+}
+
+@media screen and (max-width:575px) {
+  .firstwork {
+    height: 250px;
+    width: 500px;
+    margin:0px 10px 10px 10px;
+   }
+
+  .restwork {
+    height: 120px;
+    width: 240px;
+    margin:0px 10px 10px 10px;
+  } 
+
+  .experience h3 {
+    font-size: x-small;
+  }
+  
+  .experience p {
+    font-size: xx-small;
+  }
+
+  .contact nav {
+    margin:0px 10px 10px 10px;
+    width: 800px;
+  }
+
+  .contact nav ul li {
+    margin: 20px;
+  }    
+}
