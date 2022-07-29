@@ -123,7 +123,7 @@ header img {
   border: 5px solid #39a6b2;
   height: 800px;
   width: 1600px;
-  background-image: url("../images/health-buddy.jpg");
+  background-image: url("../images/ClubQ.png");
   float: left;
   margin: 0px 10px 10px 10px;
 }
@@ -133,6 +133,29 @@ header img {
 }
 
 /* to make the rest projects smaller*/
+.healthbuddy {
+  border: 5px solid #39a6b2;
+  height: 400px;
+  width: 790px;
+  background-color: white;
+  float: left;
+  background-image: url("../images/health-buddy.jpg");
+  background-position: center;
+  margin: 0px 10px 10px 10px;
+}
+
+.healthbuddy article {
+  margin-top: 30%;
+  background-color: #39a6b2;
+  width: fit-content;
+  padding: 1%;
+}
+
+.healthbuddy:hover {
+  color: #fce138;
+  opacity: 0.5;
+}
+
 .Drinkaholics {
   border: 5px solid #39a6b2;
   height: 400px;
